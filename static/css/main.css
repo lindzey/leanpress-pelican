@@ -1,11 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Slabo+13px);
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
+  font-family: 'Slabo 13px', serif;
+  font-size: 14px;
   font-weight: 300;
   line-height: 1.5;
   background: #eee;
