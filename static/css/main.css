@@ -1,4 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Slabo+13px);
+@import url(http://fonts.googleapis.com/css?family=Cousine);
 
 * {
   margin: 0;
@@ -676,9 +677,10 @@ footer {
 article code, article pre {
   background: #ddd;
   border: 1px solid #ccc;
-  font-family: "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Cousine', monospace;
 }
 article code {
+  color: #bf0222;
   font-size: 0.9em;
   padding: 1px 3px;
   margin: 0 3px;
@@ -752,7 +754,7 @@ figure.code .highlight {
 }
 figure.code .line-numbers {
   border-right: 1px solid #ccc;
-  font-family: "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Cousine', monospace;
   padding-right: 15px;
   text-align: right;
 }
