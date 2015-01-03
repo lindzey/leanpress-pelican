@@ -1,5 +1,4 @@
 @import url(//fonts.googleapis.com/css?family=Slabo+13px);
-@import url(http://fonts.googleapis.com/css?family=Cousine);
 
 * {
   margin: 0;
@@ -677,7 +676,7 @@ footer {
 article code, article pre {
   background: #ddd;
   border: 1px solid #ccc;
-  font-family: 'Cousine', monospace;
+  font-family: monospace;
 }
 article code {
   color: #bf0222;
