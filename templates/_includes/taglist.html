@@ -1,5 +1,7 @@
 {% if article.category %}
-  <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>, 
+  <div class="category">
+  <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+  </div>
 {% endif %}
 {% if article.tags %}
   <div class="tags">
