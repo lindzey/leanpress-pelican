@@ -626,18 +626,22 @@ article .entry-content .video-container iframe, article .entry-content .video-co
 .post .meta a:hover {
   border-bottom: 1px solid #bf0222;
 }
-.post .meta .date, .post .meta .tags, .post .meta .comments {
+.post .meta .date, .post .meta .tags, .post .meta .category {
   padding-left: 30px;
+  line-height: 1.8em;
   display: inline;
 }
-.post .meta .date:before, .post .meta .tags:before, .post .meta .comments:before {
+.post .meta .date:before, .post .meta .tags:before, .post .meta .category:before {
   color: inherit;
-  font: 1.3em FontAwesome;
-  line-height: 1.6em;
   left: 0;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  position: relative;
+  top: 3px;
 }
 @media screen and (max-width: 620px) {
-  .post .meta .date, .post .meta .tags, .post .meta .comments {
+  .post .meta .date, .post .meta .tags, .post .meta .category {
     display: inline-block;
     vertical-align: middle;
     *vertical-align: auto;
@@ -647,25 +651,17 @@ article .entry-content .video-container iframe, article .entry-content .video-co
   }
 }
 .post .meta .date:before {
-  content: "\f073";
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAXElEQVQ4T2NkYGD4zwABjFAaxodyUSh0NYwgAXwasBmCLDaIDID5jZCTkeVBXod7geoGIMcMPjZOF1BsADFhgREGxNoKS3TUN4AYZ+ONRmK8QFsDKPICqZph6hkB6LsxEUTbcgsAAAAASUVORK5CYII=);
+  content: "";
 }
 .post .meta .tags:before {
-  content: "\f02c";
+  width: 20px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAAxElEQVQ4T63TgREBMRCF4f860IES0AGVGB3oABVQgk7QAR0oQQfMM1lDko3kuJmbyV6SL5vZvY7yMwa2wASYhqWKbRzvPncFT9gB0BoDFA9KOXhgL0wH5cBabAOsw7uyrGOwFouTuefAFkz7lZ1lmWTYirl10ZX/hgEngXtgDizC2OIvLZpMX9ReAtVXR2AIzIBriEcN4hMDblblX9AXFpe+D/qB5Rq7BU0w70+pQbOYB+p7CXWxEmjoDliqeuGQ9zjbBA8ImDyqBTqeGgAAAABJRU5ErkJggg==);
+  content: "";
 }
-.post .meta .comments:before {
-  content: "\f075";
-}
-
-#comment {
-  padding: 30px 0;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #ddd;
-}
-#comment h2.title {
-  font-size: 25px;
-  font-weight: 300;
-  line-height: 35px;
-  margin-bottom: 20px;
+.post .meta .category:before {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAoElEQVQ4T63TYRGCQBCG4ZcEYgMrmMAhgZLACEADKtiABkADGigRbAAJYL4Z1h8ODuyc9/fme3bv9i4icEWBeQRMX8gAJMBrD74GKLcb+QVsFf8c/W/AGzhtlV3btw5aoASeTqQ3oFg6yJxAYYDG1gAHJ3A0IAVqZ1jHvgnolrlfnYCKNgIq4O4Mj0CsjHVwcQIPIDdAz9Z7eWf7K8G/cQaC5R5hkmLLaAAAAABJRU5ErkJggg==);
+  content: "";
 }
 
 footer {
