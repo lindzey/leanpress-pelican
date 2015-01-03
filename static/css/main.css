@@ -525,6 +525,7 @@ article .entry-content img, article .entry-content video {
   -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
   border-bottom: 0px;
+  margin-top: 5px;
 }
 article .entry-content blockquote {
   background: #ddd;
