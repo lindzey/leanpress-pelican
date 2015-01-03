@@ -499,6 +499,7 @@ article .entry-content em {
 }
 article .entry-content p {
   margin-top: 10px;
+  text-align: justify;
 }
 article .entry-content h2 {
   font-weight: 300;
