@@ -384,15 +384,27 @@ article {
   padding: 0 0 60px 0;
   position: relative;
 }
+article.index {
+  padding-bottom: 25px;
+}
 @media screen and (max-width: 620px) {
   article {
     padding-bottom: 15px;
+  }
+  article.index {
+    padding-bottom: 10px;
   }
 }
 @media screen and (max-width: 620px) {
   article {
     padding: 15px 0;
   }
+}
+article.index .read-more {
+   margin: 10px 0px;
+}
+article.index .meta {
+   margin-bottom: 5px;
 }
 article h2.title {
   font-size: 32px;
@@ -404,6 +416,11 @@ article h2.title {
   border-bottom: 0px;
   border-bottom: 1px solid #ddd;
   padding-bottom: 20px;
+}
+article.index h2.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 article h2.title a {
   color: #000;
