@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="archives">
+<h1 class="entry-title">Archives</h1>
+
+{% for article in dates %}
+   <article class="post index">
+    <h2 class="title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+    <div class="meta">
+      <div class="date">{{ article.locale_date }}</div>
+      {% include '_includes/taglist.html' %}
+    </div>
+   </article>
+{% endfor %}
+</section>
+{% endblock %}
