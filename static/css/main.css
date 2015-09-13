@@ -146,9 +146,19 @@ header h4 {
   font-weight: 100;
   font-size: 32px;
 }
-@media screen and (max-width: 1040px) {
-  header h4 {
-    float: none;
+
+
+
+/* This class is used for the subtitle */
+header .tagline{
+  margin-top:15px;
+  font-family:"HelveticaNeue-UltraLight","Helvetica Neue UltraLight","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-weight:300;
+  font-size:32px
+}
+@media screen and (max-width: 1040px){
+  header .tagline{
+    float:none
   }
 }
 
