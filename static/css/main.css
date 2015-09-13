@@ -355,22 +355,17 @@ article.index .meta {
    margin-bottom: 5px;
 }
 article h2.title {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 300;
   line-height: 1;
-  margin-bottom: 20px;
   margin-left: 0px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 20px;
-}
-article.index h2.title {
-  font-size: 24px;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+  border-bottom: 0px;
+  /* If I wanted a line below the title, this would add it */
+/*  border-bottom: 1px solid #ddd; */
 }
 article h2.title a {
-  color: #000;
+  color: #333;
 }
 article h2.title a:hover {
   color: #960d20;
@@ -381,45 +376,61 @@ article h2.title a:hover {
     font-size: 18px;
   }
 }
-article .entry-content {
-  line-height: 1.5;
-  text-align: left;
-}
-article .entry-content a {
-  text-decoration: none;
-  color: #bf0222;
-  -webkit-transition: border .25s linear;
-  -moz-transition: border .25s linear;
-  -ms-transition: border .25s linear;
-  transition: border .25s linear;
-  outline: none;
-}
+
+/* I think that this highlights visited links - wasn't there in leanpress */
+/*
 article .entry-content a:link, article .entry-content a:visited {
   border-bottom: 1px solid rgba(191, 2, 34, 0);
 }
+*/
+
+
+article header{
+margin-bottom:1.5em}
+
+article .entry-content p,
+article .entry-content blockquote,
+article .entry-content ul,
+article .entry-content ol,
+article .entry-content dl,
+article .entry-content table,
+article .entry-content iframe,
+article .entry-content h1,
+article .entry-content h2,
+article .entry-content h3,
+article .entry-content h4,
+article .entry-content h5,
+article .entry-content h6,
+article .entry-content .video-container{
+    margin-top:1.5em;
+    margin-bottom:1.5em
+}
+
+article .entry-content {
+  line-height: 1.5;
+  text-align: justify;
+}
 article .entry-content a:hover {
-  border-bottom: 1px solid #bf0222;
+  text-decoration: none;
 }
-article .entry-content .more-link {
-  display: block;
-  margin-top: 16px;
-  padding-left: 30px;
-  position: relative;
-  border-bottom: 0px;
-}
-article .entry-content .more-link:before {
-  content: "\f061";
-  font: 1.3em FontAwesome;
-  line-height: 1.6em;
-  position: absolute;
-  left: 0;
-}
-article .entry-content ul, article .entry-content ol, article .entry-content dl {
+
+article .entry-content ul,
+article .entry-content ol,
+article .entry-content dl {
   margin-left: 20px;
 }
-article .entry-content ul ul, article .entry-content ul ol, article .entry-content ul dl, article .entry-content ol ul, article .entry-content ol ol, article .entry-content ol dl, article .entry-content dl ul, article .entry-content dl ol, article .entry-content dl dl {
+article .entry-content ul ul,
+article .entry-content ul ol,
+article .entry-content ul dl,
+article .entry-content ol ul,
+article .entry-content ol ol,
+article .entry-content ol dl,
+article .entry-content dl ul,
+article .entry-content dl ol,
+article .entry-content dl dl {
   margin-top: 0;
 }
+
 article .entry-content strong {
   font-weight: bold;
 }
@@ -428,7 +439,6 @@ article .entry-content em {
 }
 article .entry-content p {
   margin-top: 10px;
-  text-align: justify;
 }
 article .entry-content h2 {
   font-weight: 300;
@@ -442,12 +452,10 @@ article .entry-content h2:before {
   border-bottom: 1px solid #fff;
   width: 100%;
 }
+
 article .entry-content img, article .entry-content video {
   max-width: 100%;
   height: auto;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -457,6 +465,7 @@ article .entry-content img, article .entry-content video {
   border-bottom: 0px;
   margin-top: 5px;
 }
+
 article .entry-content blockquote {
   background: #ddd;
   border-left: 5px solid #ccc;
@@ -492,14 +501,6 @@ article .entry-content .caption {
   padding-left: 25px;
   position: relative;
 }
-article .entry-content .caption:before {
-  content: "\f040";
-  color: #ccc;
-  font: 1.3em FontAwesome;
-  line-height: 1.6em;
-  position: absolute;
-  left: 0;
-}
 article .entry-content .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -516,28 +517,18 @@ article .entry-content .video-container iframe, article .entry-content .video-co
   margin-top: 0;
 }
 
-.share {
-  padding: 15px 0;
-  padding-left: 260px;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #ddd;
-}
-@media screen and (max-width: 620px) {
-  .share {
-    padding-left: 0px;
-  }
-}
-
 .post .meta {
+/*
   margin-top: 10px;
   line-height: 2;
+*/
   font-size: 0.9em;
   color: #333;
 }
 @media screen and (max-width: 620px) {
   .post .meta {
-    margin-top: 15px;
-    position: static;
+/*    margin-top: 15px;
+    position: static;*/
     width: auto;
   }
 }
