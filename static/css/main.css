@@ -6,12 +6,13 @@
 }
 
 body {
-  font-family: 'Slabo 13px', serif;
-  font-size: 14px;
+  font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;  
+  /*  font-family: 'Slabo 13px', serif; */
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.5;
-  background: #eee;
-  color: #000;
+  background: #fff;
+  color: #333;
 }
 @media screen and (max-width: 1040px) {
   body {
@@ -119,40 +120,50 @@ header, footer, section {
 }
 
 header {
-  line-height: normal;
-  margin-top: 15px;
-  margin-bottom: 50px;
+  height:30px;
+  padding:30px 0;
+  margin-bottom:100px;
+  text-align:center;
+  line-height:30px
 }
 @media screen and (max-width: 1040px) {
   header {
+    margin-bottom:0;  /* new */
     height: auto;
     position: relative;
     padding-bottom: 10px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  header{
+    margin-bottom:0
+  }
+}
+
+
 header a {
-  color: #000;
+  color: #333;
   -moz-transition: color 0.3s;
   -o-transition: color 0.3s;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
 header a:hover {
-  color: #258fb8;
+  color: #960d20;
   border-bottom: none;
 }
-header h1 {
-  font-weight: bold;
-  font-size: 20px;
-  display: inline-block;
-}
-header h4 {
-  margin-top: 10px;
-  text-align: center;
-  font-weight: 100;
-  font-size: 32px;
-}
 
+header h1 {
+  margin:15px 0 25px;
+  font-weight:300;
+  font-size:58px
+}
+@media screen and (max-width: 1040px){
+  header h1{
+    float:none
+  }
+}
 
 
 /* This class is used for the subtitle */
@@ -193,7 +204,7 @@ header .tagline{
   }
 }
 #main-nav > ul > li:hover > a {
-  color: #258fb8;
+  color: #960d20;
   border-bottom: none;
 }
 #main-nav > ul > li > a {
@@ -351,7 +362,7 @@ article h2.title a {
   color: #000;
 }
 article h2.title a:hover {
-  color: #258fb8;
+  color: #960d20;
   border-bottom: 0px;
 }
 @media screen and (max-width: 620px) {
