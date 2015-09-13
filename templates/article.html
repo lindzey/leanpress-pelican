@@ -2,15 +2,12 @@
 {% block title %}{{ article.title|striptags }} - {% endblock %}
 {% block content %}
 <article class="post">
-  <header>
     <h2 class="title">
       {{ article.title}}
     </h2>
     <div class="meta">
       <div class="date">{{ article.locale_date }}</div>
     </div>
-  </header>
-
   <div class="entry-content">
     {{ article.content }}
   </div><!-- /.entry-content -->

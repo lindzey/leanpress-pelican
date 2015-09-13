@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
-  {% if articles %}
-    {% for article in articles_page.object_list %}
-    <article class="post">
+{% if articles %}
+{% for article in articles_page.object_list %}
+<article class="post">
       <h2 class="title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
-      {% include '_includes/article_infos.html' %}
+      <dif class="meta">
+        <div class="date"> {{ article.locale_date}} </div>
       <div class="entry-content">{{ article.summary }}</div>
       <div class="read-more"><a href="{{ SITEURL }}/{{ article.url }}">read more...</a></div>
     </article>
