@@ -79,11 +79,17 @@ a:hover {
   clear: both;
 }
 
+
+
+/* This bit controls the transition from full-width 
+to single centered column. I think it looks better when 
+you don't have an abrubt narrowing when the window actually
+gets wider */
 header, footer, section {
-  width: 1000px;
+  width: 550px;
   margin: 0 auto;
 }
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 590px) {
   header, footer, section {
     width: 100%;
   }
