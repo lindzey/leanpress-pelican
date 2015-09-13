@@ -2,7 +2,7 @@
 {% block content %}
   {% if articles %}
     {% for article in articles_page.object_list %}
-    <article class="post index">
+    <article class="post">
       <h2 class="title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
       {% include '_includes/article_infos.html' %}
       <div class="entry-content">{{ article.summary }}</div>
