@@ -126,6 +126,9 @@ header {
   text-align:center;
   line-height:30px
 }
+
+/* QUESTION: There were all of these hard-coded 1040 values...
+should that be some width variable? */
 @media screen and (max-width: 1040px) {
   header {
     margin-bottom:0;  /* new */
@@ -179,8 +182,16 @@ header .tagline{
   }
 }
 
+
+/* main-nav controls the links in a row just below the title 
+However, this is awfully complicated ... it seems like it has
+been adapted from a system that allows nested menus, not just 
+this simple row.*/
+
 #main-nav {
-  display: inline-block;
+  margin-bottom:0px;
+  float:center;
+  margin-top:15px
 }
 @media screen and (max-width: 1040px) {
   #main-nav {
@@ -189,11 +200,21 @@ header .tagline{
     margin-top: 15px;
   }
 }
+
+/* Applies to the individual items in the nav bar*/
 #main-nav > ul > li {
   margin-left: 50px;
-  vertical-align: bottom;
-  display: inline;
+  display:-moz-inline-stack;
+  display:inline-block;
+  vertical-align:middle;
+  *vertical-align:auto;
+  zoom:1;
+  *display:inline
 }
+#main-nav>ul>li:first-of-type{
+    margin-left:0
+}
+
 @media screen and (max-width: 1040px) {
   #main-nav > ul > li {
     margin-left: 0;
@@ -210,12 +231,6 @@ header .tagline{
 #main-nav > ul > li > a {
   padding: 38px 0;
   margin-top: -38px;
-}
-#main-nav > ul > li > a:after {
-  content: "\f078";
-  color: #ccc;
-  font: 12px FontAwesome;
-  padding-left: 10px;
 }
 #main-nav > ul > li > a:only-child:after {
   content: "";
@@ -251,9 +266,10 @@ header .tagline{
   -moz-border-radius: 0 5px 5px 5px;
   -webkit-border-radius: 0;
   border-radius: 0 5px 5px 5px;
+
 }
 #main-nav > ul ul li {
-  border-top: 1px solid #eee;
+  border-top: 1px solid #fff;
   border-bottom: 1px solid #ccc;
 }
 #main-nav > ul ul li:hover {
@@ -274,14 +290,8 @@ header .tagline{
   display: block;
   padding: 5px 15px;
 }
-#main-nav > ul ul li > a:after {
-  content: "\f054";
-  color: #333;
-  font: 12px FontAwesome;
-  padding-left: 10px;
-}
 #main-nav > ul ul li > a:hover {
-  color: #000;
+  color: #333;
 }
 #main-nav > ul ul li > a:only-child:after {
   content: "";
@@ -306,7 +316,8 @@ header .tagline{
   }
 }
 
-
+/* leaving out a whole lot of mobile-nav stuff from leanpress */
+/* This all has to do with pagination ... I'm ignoring for now.*/
 #pagenavi {
   padding: 20px 0;
   height: 20px;
